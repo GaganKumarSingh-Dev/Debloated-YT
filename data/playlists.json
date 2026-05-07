@@ -1,0 +1,14 @@
+[
+  {
+    "id": "playlist_watch_later",
+    "name": "Watch Later",
+    "createdAt": "2026-05-07T00:00:00.000Z",
+    "videos": []
+  },
+  {
+    "id": "playlist_liked_videos",
+    "name": "Liked Videos",
+    "createdAt": "2026-05-07T00:00:00.000Z",
+    "videos": []
+  }
+]

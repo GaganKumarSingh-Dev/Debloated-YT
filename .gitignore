@@ -1,0 +1,9 @@
+node_modules/
+dist/
+out/
+*.log
+data/*.corrupt.*
+cache/thumbnails/*
+!cache/thumbnails/.gitkeep
+cache/subs/*
+!cache/subs/.gitkeep

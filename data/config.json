@@ -1,0 +1,15 @@
+{
+  "firstLaunch": true,
+  "interests": [
+    "Technology",
+    "Coding",
+    "Science"
+  ],
+  "ytdlpPath": "C:\\Users\\gks18\\AppData\\Roaming\\Python\\Python313\\Scripts\\yt-dlp.exe",
+  "vlcPath": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+  "ffmpegPath": "C:\\Users\\gks18\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.1.1-full_build\\bin\\ffmpeg.exe",
+  "defaultQuality": "Best Quality",
+  "autoRefreshSubscriptions": true,
+  "cacheMaxAgeDays": 1,
+  "feedRefreshHours": 24
+}

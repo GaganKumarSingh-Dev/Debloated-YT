@@ -1,0 +1,51 @@
+{
+  "name": "debloated-yt",
+  "version": "1.0.0",
+  "description": "A privacy-first local-only YouTube desktop client powered by yt-dlp and VLC.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win",
+    "check": "node --check main.js && node --check preload.js && node --check src/dataManager.js && node --check src/historyManager.js && node --check src/playlistManager.js && node --check src/recommender.js && node --check src/subscriptionManager.js && node --check src/vlc.js && node --check src/ytdlp.js"
+  },
+  "keywords": [
+    "electron",
+    "youtube",
+    "yt-dlp",
+    "vlc",
+    "privacy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "build": {
+    "appId": "com.debloatedyt.app",
+    "productName": "Debloated YT",
+    "asar": false,
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**",
+      "src/**",
+      "data/**",
+      "assets/**"
+    ],
+    "extraResources": [
+      {
+        "from": "data/",
+        "to": "data/",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  },
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^25.0.0"
+  }
+}
