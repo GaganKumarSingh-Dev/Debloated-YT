@@ -44,16 +44,16 @@ Don't want to deal with Node.js or the terminal? Just download and run the insta
 
 ## Features
 
-- **Home Feed** —> Personalized video feed built from your interests using a local scoring algorithm. No server-side tracking.
-- **Custom Recommendation Algorithm** —> Scores videos based on your interest tags, subscribed channels, recency, and watch history. Pure JavaScript, zero ML.
-- **Subscriptions** —> Subscribe to any YouTube channel by URL. New videos are automatically fetched and cached every time the app launches.
-- **History** —> Every video you watch is logged locally. Used to avoid re-recommending content and to boost channels you watch often.
-- **Playlists** —> Create, manage, and play local playlists. Play all launches videos sequentially via VLC.
-- **Up to 4K Playback** —> Streams via VLC with ffmpeg merging separate audio/video tracks for 1080p+ quality.
-- **Quality Switching** —> Switch video quality mid-playback. Saves your current timestamp, relaunches VLC at the same position.
-- **Subtitles** —> Auto-fetches subtitles via yt-dlp and passes them directly to VLC.
-- **Shorts Filter** —> Any video under 61 seconds or with `/shorts/` in the URL is automatically dropped. Everywhere.
-- **Thumbnail Cache** —> Thumbnails are downloaded and cached locally so they never re-download on relaunch.
+- **Home Feed** -> Personalized video feed built from your interests using a local scoring algorithm. No server-side tracking.
+- **Custom Recommendation Algorithm** -> Scores videos based on your interest tags, subscribed channels, recency, and watch history. Pure JavaScript, zero ML.
+- **Subscriptions** -> Subscribe to any YouTube channel by URL. New videos are automatically fetched and cached every time the app launches.
+- **History** -> Every video you watch is logged locally. Used to avoid re-recommending content and to boost channels you watch often.
+- **Playlists** -> Create, manage, and play local playlists. Play all launches videos sequentially via VLC.
+- **Up to 4K Playback** -> Streams via VLC with ffmpeg merging separate audio/video tracks for 1080p+ quality.
+- **Quality Switching** -> Switch video quality mid-playback. Saves your current timestamp, relaunches VLC at the same position.
+- **Subtitles** -> Auto-fetches subtitles via yt-dlp and passes them directly to VLC.
+- **Shorts Filter** -> Any video under 61 seconds or with `/shorts/` in the URL is automatically dropped. Everywhere.
+- **Thumbnail Cache** -> Thumbnails are downloaded and cached locally so they never re-download on relaunch.
 - **No login. No Google account. No cookies. No ads.**
 
 ---
@@ -78,10 +78,10 @@ Don't want to deal with Node.js or the terminal? Just download and run the insta
 
 Before running the app, install these separately and note their paths:
 
-1. **Node.js** (LTS) —> [nodejs.org](https://nodejs.org)
-2. **yt-dlp** —> [github.com/yt-dlp/yt-dlp/releases](https://github.com/yt-dlp/yt-dlp/releases) - download `yt-dlp.exe`
-3. **VLC** —> [videolan.org](https://www.videolan.org/) - install normally
-4. **ffmpeg** —> [ffmpeg.org/download.html](https://ffmpeg.org/download.html) - download the Windows build
+1. **Node.js** (LTS) -> [nodejs.org](https://nodejs.org)
+2. **yt-dlp** -> [github.com/yt-dlp/yt-dlp/releases](https://github.com/yt-dlp/yt-dlp/releases) - download `yt-dlp.exe`
+3. **VLC** -> [videolan.org](https://www.videolan.org/) - install normally
+4. **ffmpeg** -> [ffmpeg.org/download.html](https://ffmpeg.org/download.html) - download the Windows build
 
 > yt-dlp and VLC are **not bundled** with this app. You install them yourself and point the app to their paths via Settings.
 
