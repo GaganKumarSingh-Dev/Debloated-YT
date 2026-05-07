@@ -18,9 +18,9 @@ No ads. No tracking. No Shorts. No login. Just content.
 
 ## What is this?
 
-DebloatedYT is a local-first YouTube client that strips away everything YouTube forces on you — ads, autoplay manipulation, Shorts, algorithmic rabbit holes — and replaces it with a clean, fast, dark interface powered entirely by your own machine.
+DebloatedYT is a local-first YouTube client that strips away everything YouTube forces on you ads, autoplay manipulation, Shorts, algorithmic rabbit holes and replaces it with a clean, fast, dark interface powered entirely by your own machine.
 
-> ✨ **This is a vibe-coded project** — designed, architected, and built by feeling out the right decisions along the way. No corporate roadmap, no sprints, just the idea of a cleaner YouTube and the tools to build it.
+> ✨ **This is a vibe-coded project** designed, architected, and built by feeling out the right decisions along the way. No corporate roadmap, no sprints, just the idea of a cleaner YouTube and the tools to build it.
 
 Your watch history, subscriptions, playlists, and recommendations are all stored locally in JSON files. Nothing is sent to any server. The app never asks you to log in.
 
@@ -33,7 +33,7 @@ Don't want to deal with Node.js or the terminal? Just download and run the insta
 **[⬇ Download DebloatedYT v1.0.1 for Windows (.exe)](https://github.com/GaganKumarSingh-Dev/Debloated-YT/releases/tag/v1.0.1)**
 
 1. Download the `.exe` installer from the link above
-2. Run the installer — Windows may show a SmartScreen warning since the app isn't code-signed, click **"More info" → "Run anyway"**
+2. Run the installer Windows may show a SmartScreen warning since the app isn't code-signed, click **"More info" → "Run anyway"**
 3. Launch DebloatedYT
 4. On first launch, go to **Settings** and set the paths for yt-dlp, VLC, and ffmpeg
 5. Select your interests on the onboarding screen and you're in
@@ -44,16 +44,16 @@ Don't want to deal with Node.js or the terminal? Just download and run the insta
 
 ## Features
 
-- **Home Feed** — Personalized video feed built from your interests using a local scoring algorithm. No server-side tracking.
-- **Custom Recommendation Algorithm** — Scores videos based on your interest tags, subscribed channels, recency, and watch history. Pure JavaScript, zero ML.
-- **Subscriptions** — Subscribe to any YouTube channel by URL. New videos are automatically fetched and cached every time the app launches.
-- **History** — Every video you watch is logged locally. Used to avoid re-recommending content and to boost channels you watch often.
-- **Playlists** — Create, manage, and play local playlists. Play all launches videos sequentially via VLC.
-- **Up to 4K Playback** — Streams via VLC with ffmpeg merging separate audio/video tracks for 1080p+ quality.
-- **Quality Switching** — Switch video quality mid-playback. Saves your current timestamp, relaunches VLC at the same position.
-- **Subtitles** — Auto-fetches subtitles via yt-dlp and passes them directly to VLC.
-- **Shorts Filter** — Any video under 61 seconds or with `/shorts/` in the URL is automatically dropped. Everywhere.
-- **Thumbnail Cache** — Thumbnails are downloaded and cached locally so they never re-download on relaunch.
+- **Home Feed** —> Personalized video feed built from your interests using a local scoring algorithm. No server-side tracking.
+- **Custom Recommendation Algorithm** —> Scores videos based on your interest tags, subscribed channels, recency, and watch history. Pure JavaScript, zero ML.
+- **Subscriptions** —> Subscribe to any YouTube channel by URL. New videos are automatically fetched and cached every time the app launches.
+- **History** —> Every video you watch is logged locally. Used to avoid re-recommending content and to boost channels you watch often.
+- **Playlists** —> Create, manage, and play local playlists. Play all launches videos sequentially via VLC.
+- **Up to 4K Playback** —> Streams via VLC with ffmpeg merging separate audio/video tracks for 1080p+ quality.
+- **Quality Switching** —> Switch video quality mid-playback. Saves your current timestamp, relaunches VLC at the same position.
+- **Subtitles** —> Auto-fetches subtitles via yt-dlp and passes them directly to VLC.
+- **Shorts Filter** —> Any video under 61 seconds or with `/shorts/` in the URL is automatically dropped. Everywhere.
+- **Thumbnail Cache** —> Thumbnails are downloaded and cached locally so they never re-download on relaunch.
 - **No login. No Google account. No cookies. No ads.**
 
 ---
@@ -78,10 +78,10 @@ Don't want to deal with Node.js or the terminal? Just download and run the insta
 
 Before running the app, install these separately and note their paths:
 
-1. **Node.js** (LTS) — [nodejs.org](https://nodejs.org)
-2. **yt-dlp** — [github.com/yt-dlp/yt-dlp/releases](https://github.com/yt-dlp/yt-dlp/releases) — download `yt-dlp.exe`
-3. **VLC** — [videolan.org](https://www.videolan.org/) — install normally
-4. **ffmpeg** — [ffmpeg.org/download.html](https://ffmpeg.org/download.html) — download the Windows build
+1. **Node.js** (LTS) —> [nodejs.org](https://nodejs.org)
+2. **yt-dlp** —> [github.com/yt-dlp/yt-dlp/releases](https://github.com/yt-dlp/yt-dlp/releases) - download `yt-dlp.exe`
+3. **VLC** —> [videolan.org](https://www.videolan.org/) - install normally
+4. **ffmpeg** —> [ffmpeg.org/download.html](https://ffmpeg.org/download.html) - download the Windows build
 
 > yt-dlp and VLC are **not bundled** with this app. You install them yourself and point the app to their paths via Settings.
 
@@ -113,7 +113,7 @@ On first launch, set your yt-dlp, VLC, and ffmpeg paths in **Settings**, then se
 npm run build
 ```
 
-This produces a Windows installer in the `dist/` folder via electron-builder. The output is a standalone `.exe` — no Node.js or npm required on the target machine.
+This produces a Windows installer in the `dist/` folder via electron-builder. The output is a standalone `.exe` no Node.js or npm required on the target machine.
 
 ---
 
@@ -122,8 +122,8 @@ This produces a Windows installer in the `dist/` folder via electron-builder. Th
 ```
 DebloatedYT/
 ├── main.js                  # Electron main process, IPC handlers
-├── preload.js               # Context bridge — exposes API to renderer
-├── renderer/                # UI — HTML, CSS, JS pages and components
+├── preload.js               # Context bridge exposes API to renderer
+├── renderer/                # UI - HTML, CSS, JS pages and components
 ├── src/
 │   ├── ytdlp.js             # All yt-dlp calls via child_process
 │   ├── vlc.js               # VLC launcher + RC interface
